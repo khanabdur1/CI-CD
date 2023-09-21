@@ -2,7 +2,6 @@ pipeline {
     agent any
     options {
         buildDiscarder(logRotator(numToKeepStr: '40', artifactNumToKeepStr: '40'))
-        ansiColor('xterm')
         timestamps()
         disableConcurrentBuilds()
     }
