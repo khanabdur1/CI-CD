@@ -9,7 +9,7 @@ pipeline {
         stage('SSH Server') {
             steps {
                 sshagent(credentials : ['docker']) {
-                    sh 'ssh -o StrictHostKeyChecking=no ubuntu@43.204.101.80 ./deploy.sh $BUILD_NUMBER'
+                    sh 'ssh -o StrictHostKeyChecking=no ubuntu@13.232.239.79 ./deploy.sh $BUILD_NUMBER'
                 }
             }
         }
